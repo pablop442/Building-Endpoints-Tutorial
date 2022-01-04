@@ -15,9 +15,9 @@ def hello_world():
 
 @app.route('/todos', methods=['POST'])
 def add_new_todo():
-    request_body = request.get.json
-    new_todos = todos.append(request_body)
-    return jsonify(new_todos), 201 
+    request_body = request.json
+    todos.append(request_body)
+    return jsonify(todos), 201 
 
 
 
